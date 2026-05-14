@@ -1,0 +1,11 @@
+config.yaml
+models/
+*.pt
+*.pkl
+*.csv
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
+dist/
+*.egg-info/

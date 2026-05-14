@@ -1,0 +1,29 @@
+alpaca:
+  api_key: YOUR_ALPACA_API_KEY
+  secret_key: YOUR_ALPACA_SECRET_KEY
+  base_url: https://paper-api.alpaca.markets
+
+polygon:
+  api_key: YOUR_POLYGON_API_KEY
+
+model:
+  sequence_length: 20
+  lstm_hidden: 128
+  lstm_layers: 3
+  lstm_dropout: 0.2
+  rf_estimators: 500
+  rf_max_depth: 10
+  random_seed: 42
+
+backtest:
+  start_date: "2022-01-01"
+  end_date: "2024-01-01"
+  initial_capital: 10000
+  commission: 0.001
+  slippage: 0.001
+
+risk:
+  max_position_pct: 0.10
+  max_portfolio_exposure: 0.80
+  kelly_fraction: 0.25
+  atr_stop_multiplier: 1.5
